@@ -30,7 +30,6 @@
         {
             comboBox1 = new ComboBox();
             label1 = new Label();
-            calculateButton = new Button();
             label2 = new Label();
             comboBox2 = new ComboBox();
             resultTextBox = new TextBox();
@@ -55,16 +54,6 @@
             label1.TabIndex = 1;
             label1.Text = "Способ:";
             // 
-            // calculateButton
-            // 
-            calculateButton.Location = new Point(293, 73);
-            calculateButton.Name = "calculateButton";
-            calculateButton.Size = new Size(94, 23);
-            calculateButton.TabIndex = 2;
-            calculateButton.Text = "Вычислить";
-            calculateButton.UseVisualStyleBackColor = true;
-            calculateButton.Click += calculateButton_Click;
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -82,14 +71,15 @@
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(308, 23);
             comboBox2.TabIndex = 4;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // resultTextBox
             // 
-            resultTextBox.Location = new Point(12, 102);
+            resultTextBox.Location = new Point(12, 73);
             resultTextBox.Multiline = true;
             resultTextBox.Name = "resultTextBox";
             resultTextBox.ReadOnly = true;
-            resultTextBox.Size = new Size(375, 162);
+            resultTextBox.Size = new Size(375, 191);
             resultTextBox.TabIndex = 5;
             // 
             // Form1
@@ -102,7 +92,6 @@
             Controls.Add(resultTextBox);
             Controls.Add(comboBox2);
             Controls.Add(label2);
-            Controls.Add(calculateButton);
             Controls.Add(label1);
             Controls.Add(comboBox1);
             Name = "Form1";
@@ -115,7 +104,6 @@
 
         private ComboBox comboBox1;
         private Label label1;
-        private Button calculateButton;
         private Label label2;
         private ComboBox comboBox2;
         private TextBox resultTextBox;

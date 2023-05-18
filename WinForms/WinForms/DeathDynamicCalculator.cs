@@ -1,10 +1,6 @@
 ﻿namespace WinForms
 {
-    public enum DynamicMethod
-    {
-        Basis,
-        Chain
-    }
+    public delegate float CalculationsDelegate(float current, float relative);
 
     public class DeathDynamicCalculator
     {
@@ -21,17 +17,7 @@
 
         public float Relative(float current, float basis) => current / basis;
 
-        public IEnumerable<KeyValuePair<int, float>> BasisAbsolute() => MakeBasisCalculations(Absolute);
-
-        public IEnumerable<KeyValuePair<int, float>> ChainAbsolute() => MakeChainCalculations(Absolute);
-
-        public IEnumerable<KeyValuePair<int, float>> BasisRelative() => MakeBasisCalculations(Relative);
-
-        public IEnumerable<KeyValuePair<int, float>> ChainRelative() => MakeChainCalculations(Relative);
-
-        public delegate float CalculationsDelegate(float current, float relative);
-
-        private IEnumerable<KeyValuePair<int, float>> MakeBasisCalculations(CalculationsDelegate calculations)
+        public IEnumerable<KeyValuePair<int, float>> AsBasic(CalculationsDelegate calculations)
         {
             Dictionary<int, float> result = new();
 
@@ -43,7 +29,7 @@
             return result;
         }
 
-        private IEnumerable<KeyValuePair<int, float>> MakeChainCalculations(CalculationsDelegate calculations)
+        public IEnumerable<KeyValuePair<int, float>> AsChain(CalculationsDelegate calculations)
         {
             Dictionary<int, float> result = new();
 

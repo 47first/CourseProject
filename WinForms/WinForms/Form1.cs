@@ -1,4 +1,4 @@
-namespace WinForms
+namespace DeathDynamicCalculatorProject
 {
     public enum DynamicMethod
     {

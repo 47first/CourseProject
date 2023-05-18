@@ -1,4 +1,4 @@
-﻿namespace WinForms
+﻿namespace DeathDynamicCalculatorProject
 {
     partial class Form1
     {
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.wallpaper;
+            BackgroundImage = WinForms.Properties.Resources.wallpaper;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(399, 277);
             Controls.Add(resultTextBox);

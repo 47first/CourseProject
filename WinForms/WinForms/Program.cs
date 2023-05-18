@@ -1,4 +1,4 @@
-namespace WinForms
+namespace DeathDynamicCalculatorProject
 {
     internal static class Program
     {

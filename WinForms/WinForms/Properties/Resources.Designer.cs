@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WinForms.Properties {
+namespace DeathDynamicCalculatorProject.Properties {
     using System;
     
     

@@ -1,4 +1,4 @@
-﻿namespace WinForms
+﻿namespace DeathDynamicCalculatorProject
 {
     public delegate float CalculationsDelegate(float current, float relative);
 

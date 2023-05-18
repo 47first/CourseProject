@@ -63,6 +63,7 @@
             calculateButton.TabIndex = 2;
             calculateButton.Text = "Вычислить";
             calculateButton.UseVisualStyleBackColor = true;
+            calculateButton.Click += calculateButton_Click;
             // 
             // label2
             // 
@@ -76,6 +77,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Абсолютное", "Относительное", "Среднее" });
             comboBox2.Location = new Point(79, 44);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(308, 23);
@@ -84,9 +86,10 @@
             // resultTextBox
             // 
             resultTextBox.Location = new Point(12, 102);
+            resultTextBox.Multiline = true;
             resultTextBox.Name = "resultTextBox";
             resultTextBox.ReadOnly = true;
-            resultTextBox.Size = new Size(375, 23);
+            resultTextBox.Size = new Size(375, 162);
             resultTextBox.TabIndex = 5;
             // 
             // Form1
@@ -95,7 +98,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.wallpaper;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(399, 136);
+            ClientSize = new Size(399, 277);
             Controls.Add(resultTextBox);
             Controls.Add(comboBox2);
             Controls.Add(label2);

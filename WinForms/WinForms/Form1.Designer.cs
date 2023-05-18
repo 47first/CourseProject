@@ -86,7 +86,6 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = WinForms.Properties.Resources.wallpaper;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(399, 277);
             Controls.Add(resultTextBox);

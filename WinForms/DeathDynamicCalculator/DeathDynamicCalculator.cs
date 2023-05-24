@@ -11,6 +11,8 @@
                 _dynamic.TryAdd(value.Key, value.Value);
         }
 
+        public Dictionary<int, float> Dynamic => _dynamic;
+
         public float Absolute(float current, float basis) => current - basis;
 
         public float Average() => _dynamic.Values.Average();

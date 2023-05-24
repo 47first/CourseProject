@@ -1,3 +1,5 @@
+using WinForms;
+
 namespace DeathDynamicCalculatorProject
 {
     public enum DynamicMethod
@@ -93,6 +95,14 @@ namespace DeathDynamicCalculatorProject
                 result += $"{item.Key} - {item.Value}{Environment.NewLine}";
 
             return result;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var addPage = new ModifyKeyPairForm(_deathCalculator.Dynamic);
+
+            addPage.Show();
+            addPage.FormClosed += (sender, e) => CalculateResult();
         }
     }
 }

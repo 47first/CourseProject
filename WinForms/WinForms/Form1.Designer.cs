@@ -33,6 +33,7 @@
             label2 = new Label();
             comboBox2 = new ComboBox();
             resultTextBox = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // comboBox1
@@ -82,12 +83,23 @@
             resultTextBox.Size = new Size(375, 191);
             resultTextBox.TabIndex = 5;
             // 
+            // button1
+            // 
+            button1.Location = new Point(312, 270);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 6;
+            button1.Text = "Изменить";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(399, 277);
+            ClientSize = new Size(399, 300);
+            Controls.Add(button1);
             Controls.Add(resultTextBox);
             Controls.Add(comboBox2);
             Controls.Add(label2);
@@ -106,5 +118,6 @@
         private Label label2;
         private ComboBox comboBox2;
         private TextBox resultTextBox;
+        private Button button1;
     }
 }

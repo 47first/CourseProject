@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DeathDynamicCalculator\DeathDynamicCalculator.csproj" />
+    <ProjectReference Include="..\DeathDynamicCalculator\DynamicCalculator.csproj" />
   </ItemGroup>
 
   <ItemGroup>

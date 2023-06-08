@@ -48,11 +48,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 38);
+            label2.Location = new Point(19, 38);
             label2.Name = "label2";
-            label2.Size = new Size(79, 15);
+            label2.Size = new Size(72, 15);
             label2.TabIndex = 1;
-            label2.Text = "Смертность :";
+            label2.Text = "Показание :";
             // 
             // yearTextBox
             // 
@@ -88,7 +88,7 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += Remove;
             // 
-            // AddKeyPairForm
+            // ModifyKeyPairForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,7 +99,7 @@
             Controls.Add(yearTextBox);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "AddKeyPairForm";
+            Name = "ModifyKeyPairForm";
             Text = "Добавление новых значений";
             ResumeLayout(false);
             PerformLayout();

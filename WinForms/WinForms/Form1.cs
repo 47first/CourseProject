@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using WinForms;
 
 namespace DeathDynamicCalculatorProject
@@ -10,7 +11,7 @@ namespace DeathDynamicCalculatorProject
 
     public partial class Form1 : Form
     {
-        private DeathDynamicCalculator _deathCalculator;
+        private DynamicCalculator _deathCalculator;
         private DynamicMethod _dynamicMethod = DynamicMethod.Basis;
         private string _calculationMethod = "Абсолютное";
 
@@ -57,6 +58,9 @@ namespace DeathDynamicCalculatorProject
 
         private void CalculateResult()
         {
+            Stopwatch sw = new();
+            sw.Start();
+
             string result = "Ошибка! Неизвестная команда";
 
             if (_calculationMethod is "Среднее")
@@ -85,6 +89,9 @@ namespace DeathDynamicCalculatorProject
             }
 
             resultTextBox.Text = result;
+
+            sw.Stop();
+            timeLabel.Text = $"Время выполнения: {sw.ElapsedMilliseconds} мс";
         }
 
         private string GetFormatedString(IEnumerable<KeyValuePair<int, float>> dynamic)

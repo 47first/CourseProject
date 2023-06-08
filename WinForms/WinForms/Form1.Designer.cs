@@ -34,6 +34,7 @@
             comboBox2 = new ComboBox();
             resultTextBox = new TextBox();
             button1 = new Button();
+            timeLabel = new Label();
             SuspendLayout();
             // 
             // comboBox1
@@ -93,12 +94,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // timeLabel
+            // 
+            timeLabel.AutoSize = true;
+            timeLabel.Location = new Point(12, 294);
+            timeLabel.Name = "timeLabel";
+            timeLabel.Size = new Size(144, 15);
+            timeLabel.TabIndex = 7;
+            timeLabel.Text = "Время выполнения: 0 мс";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(399, 300);
+            ClientSize = new Size(399, 318);
+            Controls.Add(timeLabel);
             Controls.Add(button1);
             Controls.Add(resultTextBox);
             Controls.Add(comboBox2);
@@ -106,7 +117,7 @@
             Controls.Add(label1);
             Controls.Add(comboBox1);
             Name = "Form1";
-            Text = "Статистика смертности";
+            Text = "Динамика роста";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -119,5 +130,6 @@
         private ComboBox comboBox2;
         private TextBox resultTextBox;
         private Button button1;
+        private Label timeLabel;
     }
 }

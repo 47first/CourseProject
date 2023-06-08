@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForms", "WinForms\WinForms.csproj", "{8AE1CC74-9101-401C-AC1C-46904C9C3ECD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeathDynamicCalculator", "DeathDynamicCalculator\DeathDynamicCalculator.csproj", "{67163B2B-E66D-4B58-83E7-8EB8C290EA99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicCalculator", "DeathDynamicCalculator\DynamicCalculator.csproj", "{67163B2B-E66D-4B58-83E7-8EB8C290EA99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{285D21D5-2A15-4530-BFF1-FE5E162DC53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{285D21D5-2A15-4530-BFF1-FE5E162DC53F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
